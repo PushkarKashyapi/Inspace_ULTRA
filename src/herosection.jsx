@@ -1,5 +1,5 @@
 import "./App.css";
-import Why from "./Why";
+import Why from "./why";
 import Carousel from "./carousel";
 import WorkflowSection from "./WorkflowSection";
 import FormSection from "./form";

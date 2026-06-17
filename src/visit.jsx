@@ -26,16 +26,10 @@ function Visit() {
       <div className="visit-tabs">
 
         <button className="visit-tab active">
-          Harmu Road
+          kokar Road
         </button>
 
-        <button className="visit-tab">
-          Kokar Road
-        </button>
-
-        <button className="visit-tab">
-          Singh More
-        </button>
+        
 
       </div>
 

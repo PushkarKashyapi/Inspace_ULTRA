@@ -33,7 +33,7 @@ function Feet() {
         <div className="feet-image">
 
           <img
-            src="/why_real.png"
+            src="/new_1.png"
             alt="Designer"
           />
 

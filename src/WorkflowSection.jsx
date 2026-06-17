@@ -6,7 +6,7 @@ function WorkflowSection() {
     {
       title: "Consultation",
       description: "Understanding your vision and requirements.",
-      image: "/consultation.png",
+      image: "/workflow.png",
     },
     {
       title: "Planning",

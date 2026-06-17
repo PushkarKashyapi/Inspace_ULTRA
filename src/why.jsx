@@ -1,4 +1,35 @@
+import { useEffect } from "react";
+import "./App.css";
+
 function Why() {
+
+  useEffect(() => {
+
+    const cards = document.querySelectorAll(".why-card");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+
+  }, []);
+
   return (
     <section className="why-section">
 
@@ -7,8 +38,6 @@ function Why() {
       </h2>
 
       <div className="why-layout">
-
-        {/* LEFT CARDS */}
 
         <div className="stack-container">
 
@@ -47,16 +76,20 @@ function Why() {
 
         </div>
 
-        {/* RIGHT IMAGE */}
-
         <div className="why-image">
-
           <img
-            src="/why_real.png"
+            src="/zero_2.png"
             alt="Interior Expert"
           />
-
         </div>
+
+      </div>
+
+      <div className="why-btn-wrap">
+
+        <button className="why-btn">
+          Book Free Consultation
+        </button>
 
       </div>
 
