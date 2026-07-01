@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./App.css";
+import ConsultationCard from "./leadcard";
 
 const rows = [
   {
@@ -16,30 +17,30 @@ const rows = [
     title: "Living Rooms",
     reverse: true,
     projects: [
-      { image: "/img1.jpg", title: "Contemporary Living Space" },
-      { image: "/img2.jpg", title: "Minimal Luxury Lounge" },
-      { image: "/img3.jpg", title: "Elegant Family Room" },
-      { image: "/img4.jpg", title: "TV Unit Showcase" },
+      { image: "/hall.png", title: "Contemporary Living Space" },
+      { image: "/hall1.png", title: "Minimal Luxury Lounge" },
+      { image: "/hall2.png", title: "Elegant Family Room" },
+      { image: "/hall3.png", title: "TV Unit Showcase" },
     ],
   },
   {
     title: "Bedrooms",
     reverse: false,
     projects: [
-      { image: "/img3.jpg", title: "Floor To Ceiling Wardrobe" },
-      { image: "/img4.jpg", title: "Bay Window Bedroom" },
-      { image: "/img1.jpg", title: "Luxury Master Suite" },
-      { image: "/img2.jpg", title: "Modern Bedroom Design" },
+      { image: "/bedroom4.png", title: "Floor To Ceiling Wardrobe" },
+      { image: "/bedroom1.png", title: "Bay Window Bedroom" },
+      { image: "/bedroom2.png", title: "Luxury Master Suite" },
+      { image: "/beedroom3.png", title: "Modern Bedroom Design" },
     ],
   },
   {
     title: "Wardrobes & Storage",
     reverse: true,
     projects: [
-      { image: "/img2.jpg", title: "Sliding Wardrobe" },
-      { image: "/img1.jpg", title: "Walk In Closet" },
-      { image: "/img4.jpg", title: "Storage Wall System" },
-      { image: "/img3.jpg", title: "Luxury Wardrobe Unit" },
+      { image: "/sts.png", title: "Sliding Wardrobe" },
+      { image: "/sts1.png", title: "Walk In Closet" },
+      { image: "/sts2.png", title: "Storage Wall System" },
+      { image: "/sts3.png", title: "Luxury Wardrobe Unit" },
     ],
   },
 ];
@@ -52,11 +53,8 @@ function CarouselRow({ row }) {
   const nextSlide = () => {
     setProjects((prev) => {
       const updated = [...prev];
-
       const first = updated.shift();
-
       updated.push(first);
-
       return updated;
     });
   };
@@ -64,11 +62,8 @@ function CarouselRow({ row }) {
   const prevSlide = () => {
     setProjects((prev) => {
       const updated = [...prev];
-
       const last = updated.pop();
-
       updated.unshift(last);
-
       return updated;
     });
   };
@@ -131,40 +126,115 @@ function CarouselRow({ row }) {
 }
 
 function Carousel() {
+
+  const [showForm, setShowForm] = useState(false);
+  const [popupShown, setPopupShown] = useState(false);
+
+  const carouselRef = useRef(null);
+
+  useEffect(() => {
+
+    const handleScroll = () => {
+
+      if (!carouselRef.current || popupShown) return;
+
+      const rect = carouselRef.current.getBoundingClientRect();
+
+      // Trigger when top of carousel reaches 200px from top
+      if (rect.top < 200) {
+
+        setPopupShown(true);
+
+        setTimeout(() => {
+          setShowForm(true);
+        }, 1000);
+
+      }
+
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+  }, [popupShown]);
+
   return (
-    <section className="carousel-section">
+    <>
+      <section
+        ref={carouselRef}
+        className="carousel-section"
+      >
 
-      <div className="carousel-header">
+        <div className="carousel-header">
 
-        <span>
-          FEATURED PROJECTS
-        </span>
+          <span>
+            FEATURED PROJECTS
+          </span>
 
-        <h2>
-          End-to-End Interiors
-          Delivered Seamlessly
-        </h2>
+          <h2>
+            End-to-End Interiors
+            Delivered Seamlessly
+          </h2>
 
-      </div>
+        </div>
 
-      {rows.map((row, index) => (
+        {rows.map((row, index) => (
 
-        <CarouselRow
-          key={index}
-          row={row}
-        />
+          <CarouselRow
+            key={index}
+            row={row}
+          />
 
-      ))}
+        ))}
 
-      <div className="carousel-cta">
+        <div className="carousel-cta">
 
-        <button className="carousel-btn">
-          Call Our Experts
-        </button>
+          <button
+            className="carousel-btn"
+            onClick={() => setShowForm(true)}
+          >
+            Call Our Experts
+          </button>
 
-      </div>
+        </div>
 
-    </section>
+      </section>
+
+      {showForm && (
+
+        <div
+          className="popup-overlay"
+          onClick={() => setShowForm(false)}
+        >
+
+          <div
+            className="popup-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+
+            <button
+              className="popup-close"
+              onClick={() => setShowForm(false)}
+            >
+              ×
+            </button>
+
+            <ConsultationCard
+              closeForm={() => setShowForm(false)}
+            />
+
+          </div>
+
+        </div>
+
+      )}
+
+    </>
   );
 }
 

@@ -1,12 +1,12 @@
 import "./App.css";
 
 const clients = [
-  "/client_1.webp",
-  "/client2.webp",
-  "/client3.png",
-  "/client4.webp",
-  "/client2.webp",
-  "/client3.png",
+  "/log1.png",
+  "/log2.png",
+  "/log5.png",
+  "/log4.png",
+  "/log3.png",
+  "/log6.png",
 ];
 
 function Client() {

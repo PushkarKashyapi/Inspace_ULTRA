@@ -32,11 +32,7 @@ function HeroSection() {
           </div>
 
           <ul className="nav-links">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
+           
           </ul>
 
           <button className="nav-btn">

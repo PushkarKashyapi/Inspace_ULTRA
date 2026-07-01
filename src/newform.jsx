@@ -1,6 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import "./App.css";
 
 function NewFormSection() {
+
+  const navigate = useNavigate();
+
   return (
     <section className="newform-section">
 
@@ -15,12 +19,9 @@ function NewFormSection() {
           </span>
 
           <h2>
-            Want Clarity on Your Interior Budget? 
-
+            Want Clarity on Your Interior Budget?
             <br />
-            
             <br />
-           
           </h2>
 
           <p>
@@ -31,53 +32,57 @@ function NewFormSection() {
 
         </div>
 
-       <div className="newform-card">
+        <div className="newform-card">
 
-  <h3>
-    Personalized Interior Design
-    <br />
-    Quote in 30 Seconds
-  </h3>
+          <h3>
+            Personalized Interior Design
+            <br />
+            Quote in 30 Seconds
+          </h3>
 
-  <span className="step-tag">
-    STEP <span>1</span> OF 2
-  </span>
+          <span className="step-tag">
+            STEP <span>1</span> OF 2
+          </span>
 
-  <div className="option-group">
+          <div className="option-group">
 
-    <h4>Your Floorplan</h4>
+            <h4>Your Floorplan</h4>
 
-    <div className="option-grid">
+            <div className="option-grid">
 
-      <button>1 BHK</button>
-      <button>2 BHK</button>
-      <button>3 BHK</button>
-      <button>3+ BHK</button>
+              <button type="button">1 BHK</button>
+              <button type="button">2 BHK</button>
+              <button type="button">3 BHK</button>
+              <button type="button">3+ BHK</button>
 
-    </div>
+            </div>
 
-  </div>
+          </div>
 
-  <div className="option-group">
+          <div className="option-group">
 
-    <h4>Purpose</h4>
+            <h4>Purpose</h4>
 
-    <div className="option-grid">
+            <div className="option-grid">
 
-      <button>Move In</button>
-      <button>Rent Out</button>
-      <button>Renovate</button>
+              <button type="button">Move In</button>
+              <button type="button">Rent Out</button>
+              <button type="button">Renovate</button>
 
-    </div>
+            </div>
 
-  </div>
+          </div>
 
-  <button className="estimate-btn">
-    Get Free Estimate
-    <span>→</span>
-  </button>
+          <button
+            type="button"
+            className="estimate-btn"
+            onClick={() => navigate("/estimate")}
+          >
+            Get Free Estimate
+            <span>→</span>
+          </button>
 
-</div>
+        </div>
 
       </div>
 

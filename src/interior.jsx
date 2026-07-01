@@ -2,66 +2,66 @@ import "./App.css";
 
 const services = [
   {
-    name: "Modular Kitchen",
-    icon: "/kitchen.svg",
+    name: "Crokery Unit",
+    icon: "/bed21.png",
   },
   {
-    name: "Storage & Wardrobe",
-    icon: "/ward1.svg",
+    name: "Furnitures",
+    icon: "/bed22.png",
   },
   {
-    name: "Crockery Units",
-    icon: "/ward2.svg",
-  },
-  {
-    name: "Space Saving Furniture",
-    icon: "/ward3.svg",
-  },
-  {
-    name: "TV Units",
-    icon: "/ward4.svg",
-  },
-
-  {
-    name: "Study Tables",
-    icon: "/ward2.svg",
-  },
-  {
-    name: "False Ceiling",
-    icon: "/ward4.svg",
-  },
-  {
-    name: "Lights",
-    icon: "/ward4.svg",
-  },
-  {
-    name: "Wallpaper",
-    icon: "/ward1.svg",
-  },
-  {
-    name: "Wall Paint",
-    icon: "/ward3.svg",
-  },
-
-  {
-    name: "Bathroom",
-    icon: "/ward1.svg",
-  },
-  {
-    name: "Pooja Unit",
-    icon: "/ward4.svg",
-  },
-  {
-    name: "Foyer Designs",
-    icon: "/ward3.svg",
+    name: "kids Bedroom",
+    icon: "/bed28.png",
   },
   {
     name: "Movable Furniture",
-    icon: "/ward1.svg",
+    icon: "/bed30.png",
   },
   {
-    name: "Kids Bedroom",
-    icon: "/ward2.svg",
+    name: "Foyer designs",
+    icon: "/bed32.png",
+  },
+
+  {
+    name: "Pooja Unit",
+    icon: "/bed34.png",
+  },
+  {
+    name: "Tv Interior",
+    icon: "/bed36.png",
+  },
+  {
+    name: "Bedroom",
+    icon: "/bed37.png",
+  },
+  {
+    name: "Wall Paint",
+    icon: "/bed40.png",
+  },
+  {
+    name: "Wall Paper",
+    icon: "/bed42.png",
+  },
+
+  {
+    name: "WallPaper",
+    icon: "/bed42.png",
+  },
+  {
+    name: "Lights",
+    icon: "/bed44.png",
+  },
+  {
+    name: "Ceiling",
+    icon: "/bed47.png",
+  },
+  {
+    name: "Study Table",
+    icon: "/bed51.png",
+  },
+  {
+    name: "Kitchen",
+    icon: "/bed53.png",
   },
 ];
 

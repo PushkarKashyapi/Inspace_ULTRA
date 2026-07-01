@@ -4,33 +4,33 @@ import "./App.css";
 const testimonials = [
   {
     quote:
-      "I've been searching for a solution like COMPANY for YEARS. So glad I finally found one!",
-    author: "Pete, Sales Director at RevenueRockets",
-    image: "https://i.pravatar.cc/150?img=11",
+      "After talking to so many contractors in Ranchi, trust hi nahi bacha tha. These guys were transparent from Day 1, no hidden costs, and delivered exactly what they promised. Huge relief",
+    author: "Shreya Singh – Morabadi",
+    image: "aurat1.avif",
   },
   {
     quote:
-      "I switched 5 years ago and never looked back.",
-    author: "Andy, DevOps Engineer at CloudMasters",
-    image: "https://i.pravatar.cc/150?img=10",
+      "Our biggest fear was project delays because everyone around us had bad experiences. Surprisingly, everything was completed on schedule, and the finishing quality is outstanding. Bilkul tension-free experience.",
+    author: "Anjali Agarwal – Bariatu",
+    image: "aurat2.avif",
   },
   {
     quote:
-      "COMPANY's customer support is unparalleled. They're always there when we need them.",
-    author: "Olivia, Customer Success Manager at ClientCare",
-    image: "https://i.pravatar.cc/150?img=13",
+      "Monsoon mein moisture ki wajah se furniture kharab hone ka concern tha. The team recommended better materials instead of just selling expensive options. Bahut practical advice mila, and the result looks premium too.",
+    author: "Vivek Sinha – Lalpur",
+    image: "mard1.webp",
   },
   {
     quote:
-      "It's so simple and intuitive, we got the team up to speed in 10 minutes.",
-    author: "Marina, HR Manager at TalentForge",
-    image: "https://i.pravatar.cc/150?img=12",
+      "Storage was a big challenge in our apartment. They designed every corner smartly without making the house feel crowded. Budget bhi maintain raha, aur final look expected se bhi better nikla. Sach mein paisa vasool!",
+    author: "Ashok Verma – Ashok Nagar",
+    image: "mard2.avif",
   },
   {
     quote:
-      "It's just the best. Period.",
-    author: "Fernando, UX Designer at UserFirst",
-    image: "https://i.pravatar.cc/150?img=9",
+      "We had almost finalized another contractor, but every meeting brought new costs. Here, everything was explained upfront, and there were no last-minute surprises. The team even accommodated a few changes without any hassle. Ab ghar dekh ke lagta hai sahi decision liya.",
+    author: "Saurabh Prasad – Kanke Road, Ranchi",
+    image: "mard.avif",
   },
 ];
 

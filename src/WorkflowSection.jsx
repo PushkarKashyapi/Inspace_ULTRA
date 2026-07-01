@@ -11,22 +11,22 @@ function WorkflowSection() {
     {
       title: "Planning",
       description: "Space planning and design strategy.",
-      image: "/planning.jpg",
+      image: "/car_2.png",
     },
     {
       title: "Visualization",
       description: "3D renders and design presentations.",
-      image: "/visualization.jpg",
+      image: "/car_3.png",
     },
     {
       title: "Execution",
       description: "Seamless implementation with precision.",
-      image: "/execution.jpg",
+      image: "/car4.png",
     },
     {
       title: "Handover",
       description: "Delivering your dream space on time.",
-      image: "/handover.jpg",
+      image: "/car5.png",
     },
   ];
 
