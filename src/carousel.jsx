@@ -7,10 +7,10 @@ const rows = [
     title: "Modular Kitchens",
     reverse: false,
     projects: [
-      { image: "/img1.jpg", title: "Luxury Kitchen Design" },
-      { image: "/img2.jpg", title: "Modern Storage Kitchen" },
-      { image: "/img3.jpg", title: "Premium Island Kitchen" },
-      { image: "/img4.jpg", title: "Open Concept Kitchen" },
+      { image: "/kitchen.png", title: "Luxury Kitchen Design" },
+      { image: "/kitchen1.png", title: "Modern Storage Kitchen" },
+      { image: "/kitchen2.png", title: "Premium Island Kitchen" },
+      { image: "/kitchen3.png", title: "Open Concept Kitchen" },
     ],
   },
   {

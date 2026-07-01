@@ -27,7 +27,7 @@ function Feet() {
 
             <p>
               Meet a designer who'll bring your ideas,
-              budget and vision together — completely free.
+              budget and vision together  completely free.
             </p>
 
             <button
@@ -59,9 +59,9 @@ function Feet() {
 
           <div className="footer-contact">
 
-            <span>hello@inspacecraft.com</span>
+            <span>inspacecraft@gmail.com</span>
 
-            <span>1800-102-4663</span>
+            <span>+91 9031800901</span>
 
           </div>
 

@@ -89,8 +89,9 @@ function Visit() {
             <div className="visit-mini-card">
               <span>Address</span>
               <p>
-                Harmu Road,
-                Ranchi, Jharkhand
+                2nd Floor Ekatvam Heights
+Bhabha Nagar
+Kokar Kantatoli Road
               </p>
             </div>
 
@@ -106,14 +107,14 @@ function Visit() {
             <div className="visit-mini-card">
               <span>Contact</span>
               <p>
-                +91 98765 43210
+                +91 9031800901
               </p>
             </div>
 
             <div className="visit-mini-card">
               <span>Facilities</span>
               <p>
-                Parking • Consultation
+               Interior architecture and decor 
                 <br />
                 Material Display
               </p>

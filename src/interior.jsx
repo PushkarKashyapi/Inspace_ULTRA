@@ -39,8 +39,8 @@ const services = [
     icon: "/bed40.png",
   },
   {
-    name: "Wall Paper",
-    icon: "/bed42.png",
+    name: "Kitchen Units",
+    icon: "/bed21.png",
   },
 
   {

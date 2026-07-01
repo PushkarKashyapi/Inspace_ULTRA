@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./App.css";
 import Why from "./why";
 import Carousel from "./carousel";
@@ -9,11 +10,14 @@ import Visit from "./visit";
 import Client from "./client";
 import Interior from "./interior";
 import Feet from "./feet";
+import ConsultationCard from "./leadcard";
+
 function HeroSection() {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <>
       <section className="hero">
-
         <video
           className="hero-video"
           autoPlay
@@ -21,7 +25,7 @@ function HeroSection() {
           loop
           playsInline
         >
-          <source src="/inspace.mp4" type="video/mp4" />
+          <source src="/final.mp4" type="video/mp4" />
         </video>
 
         <div className="overlay"></div>
@@ -31,11 +35,12 @@ function HeroSection() {
             Inspace<span>Craft</span>
           </div>
 
-          <ul className="nav-links">
-           
-          </ul>
+          <ul className="nav-links"></ul>
 
-          <button className="nav-btn">
+          <button
+            className="nav-btn"
+            onClick={() => setShowForm(true)}
+          >
             Free Consultation
           </button>
         </nav>
@@ -47,30 +52,51 @@ function HeroSection() {
             That Feel Like Home
           </h1>
 
-          <p>
-            Elegant interiors crafted for modern living.
-          </p>
+          <p>Elegant interiors crafted for modern living.</p>
 
-          <button className="primary-btn">
-            Explore Projects
-          </button>
+         <button
+  className="primary-btn"
+  onClick={() => setShowForm(true)}
+>
+  Explore Projects
+</button>
         </div>
-
       </section>
 
-      <Why />
+      <Why openConsultation={() => setShowForm(true)} />
 
       <Carousel />
-
       <WorkflowSection />
       <FormSection />
       <Test />
-       <NewFormSection />
+      <NewFormSection />
       <Visit />
       <Interior />
       <Client />
       <Feet />
 
+      {showForm && (
+        <div
+          className="popup-overlay"
+          onClick={() => setShowForm(false)}
+        >
+          <div
+            className="popup-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="popup-close"
+              onClick={() => setShowForm(false)}
+            >
+              ×
+            </button>
+
+            <ConsultationCard
+              closeForm={() => setShowForm(false)}
+            />
+          </div>
+        </div>
+      )}
     </>
   );
 }

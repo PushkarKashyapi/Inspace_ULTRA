@@ -9,7 +9,7 @@ const plans = [
     popular: false,
 
     images: [
-      "/bedroom4.png",
+      "/hall2.png",
       "/sts.png",
       "/hall.png",
     ],
@@ -40,7 +40,7 @@ const plans = [
     popular: true,
 
     images: [
-      "/bedroom4.png",
+      "/hall2.png",
       "/sts.png",
       "/hall.png",
     ],
@@ -71,7 +71,7 @@ const plans = [
     popular: false,
 
     images: [
-      "/bedroom4.png",
+      "/hall2.png",
       "/sts.png",
       "/hall.png",
     ],
