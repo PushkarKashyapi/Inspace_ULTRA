@@ -87,13 +87,20 @@ function Visit() {
           <div className="visit-details">
 
             <div className="visit-mini-card">
-              <span>Address</span>
-              <p>
-                2nd Floor Ekatvam Heights
-Bhabha Nagar
-Kokar Kantatoli Road
-              </p>
-            </div>
+  <span>Address</span>
+  <p>
+    <a
+      href="https://share.google/CLm55SwR6MgOHWWuI"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="address-link"
+    >
+      2nd Floor Ekatvam Heights<br />
+      Bhabha Nagar<br />
+      Kokar Kantatoli Road
+    </a>
+  </p>
+</div>
 
             <div className="visit-mini-card">
               <span>Hours</span>

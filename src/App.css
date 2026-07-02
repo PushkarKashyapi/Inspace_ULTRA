@@ -5222,3 +5222,39 @@ body{
 }
 
 }
+
+
+.address-link {
+  color: inherit;      /* Keeps the same text color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.address-link:hover {
+  color: #E71C24;      /* Your theme color */
+  text-decoration: underline;
+}
+
+.option-grid button {
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option-grid button:hover {
+  background: #E71C24;
+  border-color: #E71C24;
+  color: #fff !important;
+}
+
+.option-grid button.selected {
+  background: #E71C24;
+  color: #fff !important;
+  border-color: #E71C24;
+  box-shadow: 0 8px 20px rgba(231, 28, 36, 0.25);
+  transform: translateY(-2px);
+}
