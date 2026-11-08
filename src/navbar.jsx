@@ -7,12 +7,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
-        <div className="nav-logo">
-          <span className="black">Inspace</span>
-          <span className="red">Craft</span>
-        </div>
-
+        <nav className="navbar">
+  <div className="logo">
+    <img src="/LogoInspace.png" alt="InspaceCraft" className="logo-img" />
+  </div>
         <ul className="nav-links"></ul>
 
         <button

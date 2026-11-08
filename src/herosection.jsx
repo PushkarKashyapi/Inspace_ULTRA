@@ -31,9 +31,10 @@ function HeroSection() {
         <div className="overlay"></div>
 
         <nav className="navbar">
-          <div className="logo">
-            Inspace<span>Craft</span>
-          </div>
+  <div className="logo">
+    <img src="/LogoInspace.png" alt="InspaceCraft" className="logo-img" />
+  </div>
+
 
           <ul className="nav-links"></ul>
 

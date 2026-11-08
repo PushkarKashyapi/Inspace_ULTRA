@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import EstCard from "./estcar";
-import ConsultationCard from "./leadcard";
+import ConsultationCarder from "./estercard";
 import Navbar from "./navbar";
 import Feet from "./feet"
 function Estimate() {
@@ -17,7 +17,7 @@ function Estimate() {
 
           <div className="estimate-modal-card">
 
-            <ConsultationCard
+            <ConsultationCarder
               onSuccess={() => setShowForm(false)}
             />
 
