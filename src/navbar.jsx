@@ -11,7 +11,13 @@ const Navbar = () => {
   <div className="logo">
     <img src="/LogoInspace.png" alt="InspaceCraft" className="logo-img" />
   </div>
-        <ul className="nav-links"></ul>
+        <ul className="nav-links">
+          <li><a href="/studio/index.html">Design Studio</a></li>
+          <li><a href="/studio/index.html#compare">Packages</a></li>
+          <li><a href="/studio/index.html#offers">Offers</a></li>
+        </ul>
+
+        <a className="studio-mobile-link" href="/studio/index.html">Design Studio</a>
 
         <button
           className="consult-btn"

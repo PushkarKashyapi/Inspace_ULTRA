@@ -5458,3 +5458,22 @@ body{
   }
 }
 
+
+/* Design Studio link for phones and tablets, where .nav-links is hidden */
+.studio-mobile-link{
+    display:none;
+    margin-left:auto;
+    margin-right:12px;
+    color:#111;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    white-space:nowrap;
+}
+.studio-mobile-link:hover{ color:#ef2b23; }
+@media(max-width:992px){
+  .studio-mobile-link{ display:inline-block; }
+}
+@media(max-width:400px){
+  .studio-mobile-link{ font-size:12px; margin-right:8px; }
+}
